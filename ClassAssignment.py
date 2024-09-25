@@ -7,22 +7,23 @@ from functionScope import sub as fn2
 
 
 
-def timeFunction(func,*arg,**kwargs):#wrapper
+def timeFunction(func,*args,**kwargs):#wrapper
     startTime = t.time()
-    res = func(args,kwargs)
+    res = func(*args,**kwargs)
     endTime= t.time()
     runTimeInSec = endTime - startTime
-    print(f"\n time to execute function is { runTimeInSec*1000000} micro seconds")
+    print(f"\n time to execute function is { runTimeInSec*1000000
+     } micro seconds")
 
 
-a = 1
-b = 2
+a = 10000
+b = 20000
 
-timeFunction(fn1,a,b,c=1)
+timeFunction(fn1,a,b)
 
 
 timeFunction(fn2,a,b)
 
 
-# for those who are unable to execute code and are late in assignment submissions and do not have any git repo update
+# for those who are unable to execute code and are late in assignment submissions and your git repo not updated regularly
 # create a presentation to explain usage of passing function as arguments to modify function using wrapper functions
