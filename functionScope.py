@@ -9,7 +9,8 @@ def add(a, b):
     """
     return a + b #Calling the function with arguments
 
-
+def sub(a,b):
+    return a-b
 
 
 if __name__ == "__main__":
@@ -19,5 +20,5 @@ if __name__ == "__main__":
     print(result)  # Output: 8
 
 
-    res =  add(10,10)
+    res =  sub(10,10)
     print(res)
